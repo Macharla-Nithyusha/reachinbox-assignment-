@@ -1,1 +1,33 @@
+/* basic styling for demo */
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f7f7fb; color: #111; }
+.app { display: flex; height: 100vh; }
+
+/* sidebar */
+.sidebar { width: 200px; background: #fff; padding: 12px; border-right: 1px solid #e6e6f0; box-sizing: border-box; }
+.logo { font-weight: bold; margin-bottom: 12px; }
+.sidebar-section h4 { margin: 8px 0 6px; font-size: 13px; color: #333; }
+.sidebar-section ul { list-style: none; padding: 0; margin: 0; }
+.sidebar-section li { padding: 6px 8px; cursor: pointer; border-radius: 4px; }
+.sidebar-section li:hover { background: #f0f0f8; }
+
+/* search */
+.search-bar { display: flex; gap: 8px; margin-bottom: 12px; }
+.search-bar input { flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+.search-bar button { padding: 8px 12px; }
+
+/* emails */
+.email-list { max-height: calc(100vh - 120px); overflow: auto; background: #fff; }
+.email-item { padding: 10px; border-bottom: 1px solid #eee; cursor: pointer; }
+.email-item:hover { background: #fafafa; }
+.email-subject { font-weight: 600; margin-bottom: 6px; }
+.email-meta { font-size: 12px; color: #666; display:flex; justify-content:space-between; }
+.email-category { font-size: 12px; margin-top: 6px; color: #111; }
+
+/* detail */
+.email-detail { padding: 12px; background: #fff; height: calc(100vh - 40px); overflow: auto; border-left: 1px solid #eaeaf5; }
+.detail-subject { margin-top: 0; }
+.detail-meta { font-size: 13px; color: #444; margin-bottom: 12px; display: grid; gap: 6px; }
+.detail-body pre { white-space: pre-wrap; background: #f9f9ff; padding: 12px; border-radius: 6px; }
+.detail-actions { margin-top: 12px; display:flex; gap:8px; }
+.suggestion { margin-top: 12px; background: #fff; border: 1px dashed #ddd; padding: 12px; border-radius: 6px; }
 
